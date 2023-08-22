@@ -1,6 +1,6 @@
 //Creacion del mazo
-const mazo = [];
-const barajado = [];
+var mazo = [];
+var barajado = [];
 const pintas = ["clubs", "diamonds", "hearts", "spades"];
 
 const CrearMazo = () => {
@@ -26,7 +26,7 @@ const DuplicarMazo = () => {
 };
 
 //Creacion de las manos de los jugadores
-const manos = [];
+var manos = [];
 
 const repartir = () => {
   const mano = [];
@@ -36,19 +36,6 @@ const repartir = () => {
   }
   manos.push(mano);
 };
-//const DarCartas = () => {
-//for (let i = 0; i < manos.length; i++) {
-//const manosHTML = document.querySelector("espacio-"+i)
-//for (let j = 0; j < manos[i].length; j++) {
-//const cartaHTML = document.createElement("div")
-//const imagenHTML = document.createElement("img")
-//imagenHTML.src = manos[i][j].img
-//cartaHTML.appendChild(imagenHTML)
-//manosHTML.appendChild(imagenHTML)
-//}
-//}
-//}
-
 const DarCartas = () => {
   for (let i = 0; i < manos.length; i++) {
     for (let j = 0; j < manos[i].length; j++) {
@@ -65,14 +52,19 @@ const DarCartas = () => {
         "beforeend",
         `<img src=${imagen} alt=${imagen} class="image">`
         )
-        }
+      }
     }
-};            
+};
+const limpiarMano = () => {
+  mazo = [];
+  manos = [];
+  barajado = [];
+}
 //Iniciar juego
 playGame.onclick = () => {
+  limpiarMano()
   CrearMazo();
   DuplicarMazo();
   repartir();
   DarCartas();
-  //DarMazo()
 };
