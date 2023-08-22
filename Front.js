@@ -56,6 +56,7 @@ const DarCartas = () => {
         }
     }
 }            
+
 //Iniciar juego
 playGame.onclick = () => {
     CrearMazo()
