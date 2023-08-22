@@ -64,9 +64,10 @@ const DarCartas = () => {
       contenedor.insertAdjacentHTML(
         "beforeend",
         `<img src=${imagen} alt=${imagen} class="image">`
-      );
+        )
+        }
     }
-}            
+};            
 //Iniciar juego
 playGame.onclick = () => {
   CrearMazo();
