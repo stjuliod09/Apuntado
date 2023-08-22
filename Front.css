@@ -3,6 +3,11 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+main{
+    padding: 10px;
+}
+
 .card-holder {
     width: 120px; 
     height: 185px; 
