@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.card-holder {
+    width: 120px; 
+    height: 185px; 
+    margin: 10px;
+    background-color: #ccc; 
+    border: 1px dashed #aaa;
+    border-radius: 5px;
+    float: left;
+}
+.card-holder .image{
+    width: 120px; 
+    height: 185px; 
+}
+.card-container::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
