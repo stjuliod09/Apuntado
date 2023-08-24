@@ -13,7 +13,7 @@ main {
 }
 
 #botones {
-  margin: 10px;
+  margin: 5px;
 }
 
 .card-holder {
@@ -37,4 +37,43 @@ main {
 
 .badge {
   color: black;
+}
+
+.btn-primary.btn-pill {
+  background-color: #18ca36; 
+  border-color: #138313; 
+  color: #fff;
+  border-radius: 50px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary.btn-pill:hover {
+  background-color: #18ca36; 
+  border-color: #138313; 
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.background-image {
+  position: relative;
+  background: url('img/background.jpg.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.content-container {
+  position: absolute;
+  width: 100%;
+  top: 50%; /* Ajusta la posición vertical */
+  transform: translateY(-50%);
 }

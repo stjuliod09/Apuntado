@@ -9,7 +9,7 @@ const CrearMazo = () => {
       const carta = {
         numero: i,
         pinta: pintas[j],
-        img: "PNG-cards/" + i + "_of_" + pintas[j] + ".png",
+        img: "img/PNG-cards/" + i + "_of_" + pintas[j] + ".png",
       };
       mazo.push(carta);
       mazo.push(carta);
@@ -41,7 +41,7 @@ const DarCartas = () => {
     for (let j = 0; j < manos[i].length; j++) {
       const cartaRepartir = manos[i][j];
       const imagen =
-        "PNG-cards/" +
+        "img/PNG-cards/" +
         cartaRepartir.numero +
         "_of_" +
         cartaRepartir.pinta +
